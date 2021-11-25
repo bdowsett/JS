@@ -70,6 +70,7 @@ describe('thermostat returns temp', () => {
 
  describe('thermostat returns high energy usage', () => {
     let thermostat = new Thermostat
+    thermostat.setPowerSavingMode(false)
     thermostat.up(6)
     it('shows energy usage', () => {
      expect(thermostat.currentEnergyUsage()).toBe("high usage")
