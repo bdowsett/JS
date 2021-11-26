@@ -7,7 +7,7 @@ class Thermostat {
 
     }
 getTemperature() {
-   return this.temp
+   return `Temperature is ${this.temp}`
 }    
 
 up(number){
